@@ -66,11 +66,12 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 
-
-  gem 'capistrano'
-  gem 'capistrano-rails'
-  gem 'capistrano-passenger'
-  gem 'capistrano-rbenv'
+  gem "capistrano", "~> 3.11"
+  gem "capistrano-rails", "~> 1.4"
+  gem "capistrano-rails-console", require: false
+  gem "capistrano-rails-collection"
+  gem "capistrano-passenger", "~> 0.2.0"
+  gem "capistrano-rbenv", "~> 2.1", ">= 2.1.4"
 end
 
 group :test do
